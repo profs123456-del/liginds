@@ -454,9 +454,9 @@ const bosses=[
  {id:"3",name:"PH CAMPUS",respawn:1},
  {id:"4",name:"MP HOLE",respawn:1},
  {id:"5",name:"PH HOLE",respawn:1},
- {id:"6",name:"EF MP HOLE",respawn:2},
- {id:"7",name:"EF PH HOLE",respawn:2},
- {id:"8",name:"EF SG HOLE",respawn:2},
+ {id:"6",name:"MP ETHERIAL",respawn:2},
+ {id:"7",name:"PH ETHERIAL",respawn:2},
+ {id:"8",name:"SG ETHERIAL",respawn:2},
  {id:"9",name:"DARK SWORDSMAN",respawn:2},
  {id:"10",name:"NINJA KNIFE",respawn:2},
  {id:"11",name:"CRUEL JUPITER",respawn:8},
@@ -493,10 +493,13 @@ bosses.forEach(b=>{
  card.className="card";
  card.id=b.id+"-card";
 
- if(b.name.includes("EF MP HOLE")){
+ if(b.name.includes("MP ETHERIAL")){
    card.style.backgroundImage = "url('ef-ai.png')";
  }
- if(b.name.includes("EF PH HOLE")){
+ if(b.name.includes("PH ETHERIAL")){
+   card.style.backgroundImage = "url('ef-ai.png')";
+ }
+ if(b.name.includes("SG ETHERIAL")){
    card.style.backgroundImage = "url('ef-ai.png')";
  }
  if(b.name.includes("CAMPUS")){
