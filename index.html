@@ -449,28 +449,17 @@ document.addEventListener("focusin",e=>{if(e.target.type==="datetime-local") inp
 document.addEventListener("focusout",e=>{if(e.target.type==="datetime-local") inputLock=false;});
 
 const bosses=[
- {id:"1",name:"CH-0 MP CAMPUS",respawn:1},
- {id:"2",name:"CH-0 SG CAMPUS",respawn:1},
- {id:"3",name:"CH-0 PH CAMPUS",respawn:1},
- {id:"4",name:"CH-0 MP HOLE",respawn:1},
- {id:"5",name:"CH-0 PH HOLE",respawn:1},
- {id:"6",name:"CH-0 EF MP HOLE",respawn:2},
- {id:"7",name:"CH-0 EF PH HOLE",respawn:2},
- {id:"8",name:"CH-0 EF SG HOLE",respawn:2},
- {id:"9",name:"CH-0 DARK SWORDSMAN",respawn:2},
- {id:"10",name:"CH-0 NINJA KNIFE",respawn:2},
- {id:"11",name:"CH-1 NINJA KNIFE",respawn:2},
- {id:"12",name:"CH-1 EF MP HOLE",respawn:2},
- {id:"13",name:"CH-1 EF PH HOLE",respawn:2},
- {id:"14",name:"CH-1 EF SG HOLE",respawn:2},
- {id:"15",name:"CH-1 DARK SWORDSMAN",respawn:2},
- {id:"16",name:"CH-1 SG CAMPUS",respawn:1},
- {id:"17",name:"CH-1 MP HOLE",respawn:1},
- {id:"18",name:"CH-1 MP CAMPUS",respawn:1},
- {id:"19",name:"CH-1 PH HOLE",respawn:1},
- {id:"20",name:"CH-1 PH CAMPUS",respawn:1},
- {id:"21",name:"CH-1 CRUEL JUPITER",respawn:8},
- {id:"22",name:"CH-0 CRUEL JUPITER",respawn:8},
+ {id:"1",name:"MP CAMPUS",respawn:1},
+ {id:"2",name:"SG CAMPUS",respawn:1},
+ {id:"3",name:"PH CAMPUS",respawn:1},
+ {id:"4",name:"MP HOLE",respawn:1},
+ {id:"5",name:"PH HOLE",respawn:1},
+ {id:"6",name:"EF MP HOLE",respawn:2},
+ {id:"7",name:"EF PH HOLE",respawn:2},
+ {id:"8",name:"EF SG HOLE",respawn:2},
+ {id:"9",name:"DARK SWORDSMAN",respawn:2},
+ {id:"10",name:"NINJA KNIFE",respawn:2},
+ {id:"11",name:"CRUEL JUPITER",respawn:8},
 ];
 
 const container=document.getElementById("bossContainer");
@@ -510,34 +499,19 @@ bosses.forEach(b=>{
  if(b.name.includes("CAMPUS")){
    card.style.backgroundImage = "url('ds-ai.png')";
  }
-if(b.name.includes("CH-0 MP HOLE")){
+if(b.name.includes("MP HOLE")){
    card.style.backgroundImage = "url('ds-ai.png')";
  }
-if(b.name.includes("CH-0 PH HOLE")){
+if(b.name.includes("PH HOLE")){
    card.style.backgroundImage = "url('ds-ai.png')";
  }
-if(b.name.includes("CH-1 PH HOLE")){
-   card.style.backgroundImage = "url('ds-ai.png')";
- }
-if(b.name.includes("CH-1 MP HOLE")){
-   card.style.backgroundImage = "url('ds-ai.png')";
- }
-if(b.name.includes("CH-1 DARK SWORDSMAN")){
+if(b.name.includes("DARK SWORDSMAN")){
    card.style.backgroundImage = "url('dark-swordsman ai.png')";
  }
-if(b.name.includes("CH-0 DARK SWORDSMAN")){
-   card.style.backgroundImage = "url('dark-swordsman ai.png')";
- }
-if(b.name.includes("CH-0 NINJA KNIFE")){
+if(b.name.includes("NINJA KNIFE")){
    card.style.backgroundImage = "url('ninja knife-ai.png')";
  }
- if(b.name.includes("CH-1 NINJA KNIFE")){
-   card.style.backgroundImage = "url('ninja knife-ai.png')";
- }
- if(b.name.includes("CH-1 CRUEL JUPITER")){
-   card.style.backgroundImage = "url('cruel jupiter-ai.png')";
- }
- if(b.name.includes("CH-0 CRUEL JUPITER")){
+ if(b.name.includes("CRUEL JUPITER")){
    card.style.backgroundImage = "url('cruel jupiter-ai.png')";
  }
 
