@@ -368,10 +368,17 @@ button:hover{
  font-family:'Orbitron', sans-serif;
  letter-spacing:1px;
 }
-
+.boss-tracker-header {
+  background-image: url('ranliginds.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
 </style>
 </head>
-
+  <!-- AUTO SORT, RESET ALL, ALARM buttons here -->
+</div>
 <body>
 
 <div id="rightLogo"><img src="logo.png" alt="Logo"></div>
@@ -383,7 +390,6 @@ button:hover{
  <div id="nextBossTime">---</div>
 </div>
 
-<h1>BOSS TRACKER</h1>
 
 <!-- ✅ KILL HISTORY PANEL -->
 <div id="historyPanel">
@@ -398,7 +404,15 @@ button:hover{
   <input id="pinInput" type="password" placeholder="Admin PIN">
   <div id="pinError"></div>
 </div>
-
+<div style="
+  background-image: url('ranliginds.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: -5px;
+">
+  <h1>BOSS TRACKER</h1>
 <div class="top-controls">
   <button class="control-bar control-sort" id="sortBtn">AUTO SORT: ON</button>
   <button class="control-bar control-reset" onclick="resetAll()">RESET ALL</button>
@@ -412,6 +426,7 @@ button:hover{
 <!-- Firebase -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
 
 <script>
   /* ✅ YOUR FIREBASE CONFIG (keep yours) */
