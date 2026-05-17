@@ -493,7 +493,10 @@ bosses.forEach(b=>{
  card.className="card";
  card.id=b.id+"-card";
 
- if(b.name.includes("EF")){
+ if(b.name.includes("EF MP HOLE")){
+   card.style.backgroundImage = "url('ef-ai.png')";
+ }
+ if(b.name.includes("EF PH HOLE")){
    card.style.backgroundImage = "url('ef-ai.png')";
  }
  if(b.name.includes("CAMPUS")){
